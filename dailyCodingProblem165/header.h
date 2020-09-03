@@ -21,3 +21,5 @@
 int generateIntNumber(void);
 int *getArray(int);
 void printArray(int *, int);
+
+int *getArrayWithNumberOfSmallerElements(int *, int);

@@ -26,12 +26,14 @@
 #include "header.h"
 
 int main(int argc, const char * argv[]) {
-//    srand((unsigned int) time(NULL));
+    srand((unsigned int) time(NULL));
     
     int size = generateIntNumber();
     int *array = getArray(size);
+    for (int i = 0; i < size; i++) array[i] = generateIntNumber();
     printArray(array, size);
     
-    
+    int *outputArray = getArrayWithNumberOfSmallerElements(array, size);
+    printArray(outputArray, size);
     return 0;
 }
