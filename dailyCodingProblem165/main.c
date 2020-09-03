@@ -6,10 +6,15 @@
 //  Copyright © 2020 Denny Caruso. All rights reserved.
 //
 
-#include <stdio.h>
+#include "header.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    srand((unsigned int) time(NULL));
+    
+    int size = generateIntNumber();
+    int *array = getArray(size);
+    printArray(array, size);
+    
+    
     return 0;
 }
